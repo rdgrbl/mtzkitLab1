@@ -10,6 +10,7 @@ namespace University
         public void addStudent(Student s) {
             this.students.Add(s);
         }
+
         public void printStudents(){
             foreach (Student s in this.students) {
                 Console.WriteLine(s.FirstName + " " + s.LastName + " " + s.Age);

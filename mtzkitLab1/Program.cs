@@ -14,6 +14,7 @@ namespace University
             Console.WriteLine("3.Show students list");
             Console.Write(">:");
             int x = Convert.ToInt32(Console.ReadLine());
+            
             switch (x)
             {
                 case 1: university.addStudent(CreateStudentFromUserInput()); ShowMainMenu(university); break;
@@ -21,6 +22,7 @@ namespace University
                 case 3: university.printStudents(); ShowMainMenu(university); break;
             }
         }
+
         static Student CreateStudentFromUserInput()
         {
             Console.Write("First Name >> ");
@@ -33,6 +35,7 @@ namespace University
             int age = Convert.ToInt32(Console.ReadLine());
             return new Student(firstName, lastName, age);
         }
+
         static void Main(string[] args)
         {
             University university = new University();
